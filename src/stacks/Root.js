@@ -11,6 +11,7 @@ const RootStack = createNativeStackNavigator();
 
 const Root = () => {
     const { currentUser } = useSendbirdChat();
+    console.log('////////////',currentUser);
 
     return (
         <NavigationContainer>
@@ -23,7 +24,7 @@ const Root = () => {
                         <RootStack.Screen name={'GroupChannelCreate'} component={GroupChannelCreateScreen} />
                         <RootStack.Screen name={'GroupChannel'} component={GroupChannelScreen} />
                     </>
-                )}
+                )}  
             </RootStack.Navigator>
         </NavigationContainer>
     );

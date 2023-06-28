@@ -75,6 +75,6 @@ const style = StyleSheet.create({
         width: '80%',
         alignSelf: 'center',
         marginVertical: 10, 
-        
+        color:'black'
     }
 })
